@@ -1,0 +1,10 @@
+
+deployment:
+  dockerhub:
+    branch: master
+    commands:
+      - $DOCKER_FILE_TRIGGER
+
+test:
+  override:    
+    - mocha
